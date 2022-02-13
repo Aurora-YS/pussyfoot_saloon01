@@ -115,7 +115,6 @@ body{overflow: hidden;}
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-#fp-nav ul li.active a span,
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
     width: 10px;
