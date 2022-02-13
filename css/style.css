@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import url(../fonts/stylesheet.css);
+
+/* 
+    font-family: 'KoPubDotum';
+    font-weight: 300;
+
+    font-family: 'KoPubDotum';
+
+    font-family: 'Microsoft Himalaya';
+
+    font-family: 'Constantia';
+    font-style: normal;
+
+    font-family: 'Constantia';
+    font-style: italic;
+
+*/
+
+
+*{
+    box-sizing:border-box;
+    font-family: 'Constantia', 'KoPubDotum', serif;
+}
+html, body{margin: 0; padding: 0;}
+header, section, article, aside, main, nav, footer{display: block;}
+h1, h2, h3, h4, h5, h6, p{margin: 0; padding: 0; user-select: none;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+body{overflow: hidden;}
+
+
+main{}
+main .box{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+main .box > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+section.main_logo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: auto;
+    transition: all 0.3s;
+}
+
+section.creator p{
+    font-style: italic;
+}
+
+section.content .content_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+section.content .content_txt .title{text-transform: uppercase;}
+section.content .content_txt .plus{font-size: 14px;}
+section.content .content_txt .cheers{
+    font-size: 48px;
+    color: #2D9284;
+    text-align: center;
+}
+
+section.content .content_txt .price{
+    text-align: right;
+}
+section.content .content_txt .price p{padding: 10px 0;}
+section.content .content_txt .price .flavor{
+    font-size: 26px;
+    border-bottom: 1px solid #000;
+}
+
+section.content .content_txt .price .real_price{
+    font-size: 30px;
+    padding-top: 10px;
+}
+section.content .content_txt .price .real_price span{font-size: 16px;}
+
+section.sec_img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: auto;
+    transition: all 0.3s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    section.main_logo img {width: 50%;}
+    .box .sec_img {height: 50vh;}
+    main .box > p, main .box .content_txt {width: 80%;}
+    main .box .content_txt p {width: 100%;}
+    .box .sec_img img {width: 80%;}
+    section.content .content_txt{font-size: 16px;}
+    section.content .content_txt .price .flavor{font-size: 20px;}
+    section.content .content_txt .plus{font-size: 10px;}
+    section.content .content_txt .cheers{font-size: 32px; text-align: center;}
+    section.sec_img img{width: 80%;}
+    main .box > p{font-size: 16px;}
+}
