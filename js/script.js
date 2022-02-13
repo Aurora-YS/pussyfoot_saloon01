@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     var elm = ".box"; //각 섹션에을 지목할 클래스명을 저장
     //$(elm).css("background", "#08f");
+    var elm_img = ".sec_img";
 
     $(elm).each(function(index){  //index = 0 -> 1 -> 2 -> 3 -> ... -> 6
         //개별 색션에서 접근하여 이벤트를 발생시킴
@@ -116,15 +117,15 @@ $(document).ready(function(){
 
 
     //상단 메뉴 클릭시 해당하는 페이지로 이동 (+ section.box에 존재한 active 영역도 변경한다.)
-    $("header li").click(function(){
+    $("#fp-nav li").click(function(){
         var $index = $(this).index();
-        $("header li").removeClass("active");
+        $("#fp-nav li").removeClass("active");
         $(this).addClass("active");
 
-        $(elm).removeClass("active");
-        $(elm).eq($index).addClass("active");
+        $(elm_img).removeClass("active");
+        $(elm_img).eq($index).addClass("active");
 
-        $("html, body").stop().animate({scrollTop : $(elm).eq($index).offset().top}, 1000);
+        $("html, body").stop().animate({scrollTop : $(elm_img).eq($index).offset().top}, 1000);
 
         return false;    
     });
