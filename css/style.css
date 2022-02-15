@@ -89,8 +89,7 @@ body{overflow: hidden;}
     cursor: pointer;
     text-decoration: none;
 }
-#fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
+
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
     height: 12px;
